@@ -54,7 +54,6 @@ class MainActivity : AppCompatActivity() {
             if (it.resultCode == RESULT_OK) {
                 for (i in 0 until it.data!!.clipData!!.itemCount){
                     videos.add(it.data!!.clipData!!.getItemAt(i).uri)
-                    //videos.addAll(it.data.clipData)
                 }
                 startShow()
             }
